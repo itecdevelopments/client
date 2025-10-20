@@ -300,13 +300,15 @@ import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import Box from "@mui/material/Box";
 import {
-  getRegions,
   getCustomers,
   createCustomer,
   updateCustomer,
   deleteCustomer,
   uploadCustomersCSV,
 } from "../api/customers";
+import {
+  getRegions
+} from "../api/regions";
 
 export default function CustomersDataGrid() {
   const [rows, setRows] = useState([]);
