@@ -168,6 +168,7 @@ export default function ServiceReport() {
 
   /** ---------- Submit Form ---------- */
   const onSubmit = async (values) => {
+    console.log(values);
     try {
       const reportFile = values.serviceReportPicture?.[0];
       const deliveryFile = values.deliveryNotePicture?.[0];
